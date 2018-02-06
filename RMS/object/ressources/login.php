@@ -17,6 +17,7 @@ if($_POST['mdp'] == 'salle'){
     ));
     $_SESSION['login'] = true;
     echo ('loged');
+    header ('Location: ./entrer.php');
 
 }
 else

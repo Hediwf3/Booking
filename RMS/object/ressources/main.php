@@ -8,3 +8,4 @@
 include_once ('./RMS/object/ressources/pageHeader.php');
 include_once ('./RMS/object/ressources/loginForm.php');
 echo ('le mot de passe pour acceder au calendrier est salle');
+

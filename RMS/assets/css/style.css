@@ -1,0 +1,95 @@
+.flex-form {
+    position: fixed;
+    top: 45%;
+    z-index: 100;
+}
+.flex-form > * {
+    border: 0;
+    padding: 1em;
+    background: #fff;
+    line-height: 60px;
+    font-size: 1.2em;
+    border-radius: 0;
+    outline: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+}
+.flex-form > *:last-child {
+    border-right: 0;
+}
+
+.cta {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 20px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+span {
+    display: block;
+    width: auto;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+input[type="date"] {
+    height: 60px;
+}
+
+@media screen and (max-width: 1263px) {
+    .flex-form {
+        border: none;
+    }
+    .flex-form > * {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+@media screen and (max-width: 769px) {
+    .flex-form {
+        top: 20%;
+    }
+    .flex-form > * {
+        line-height: 1.5em;
+    }
+
+    input[type="date"] {
+        height: 1.5em;
+    }
+}
